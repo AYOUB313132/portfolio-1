@@ -1,0 +1,292 @@
+/* =========== Google Font =========== */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Gentium+Plus:wght@400;700&family=Roboto:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+}
+/* =========== Start Ruls =========== */
+:root{
+    --main-color: ;
+    --second--color: #FFCA05;
+    --font-nrml: ;
+    --font-big: ;
+    --font-smal: ;
+    --margin-section: ;
+    --padding-section: ;
+    --border-raduis: 8px;
+}
+/* =========== Global Ruls =========== */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Assistant', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Gentium Plus', serif;
+}
+h2,h3{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 2.25rem;
+}
+h2{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 30px 0;
+    padding: 10px 0;
+    letter-spacing: 3px;
+}
+h3{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+h2::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #FFC905;
+    left: 0;
+    bottom: -5px;
+    border-radius: 8px;
+}
+/* =========== Container =========== */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:767px) {
+    .container{
+        width: 737px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 962px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* @media (min-width:1400px) {
+    .container{
+        width: 1370px;
+    }
+} */
+/* =========== Star Header =========== */
+.header{
+
+}
+.header nav{
+    
+}
+.header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.header nav ul li {
+    margin-left: 10px;
+}
+.header .profile{
+    display: flex;
+    gap: 50px;
+
+}
+.header .profile .image{
+    width: 700px;
+    position: relative;
+}
+.header .profile .image::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50px;
+    background-color: rgb(255, 202, 5, 0.5);
+    top: 0;
+    left: 30px;
+    z-index: 2;
+}
+.header .profile .image img{
+    filter:grayscale(100%);
+    max-width: 100%;
+    height: 100%;
+}
+.header .profile .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+}
+.header .profile .info h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 40px;
+}
+.header .profile .info h1::after{
+    position: absolute;
+    content: 'Front End Developer';
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: #FFC905;
+    left: 0;
+    bottom: -30px;
+    padding: 5px;
+}
+.header .profile .info span{
+    font-weight: bold;
+}
+/* =========== Star Main =========== */
+main .container{
+    display: flex;
+    color: white;
+}
+/* =========== Star Aside =========== */
+main .container aside{
+    padding: 40px 30px;
+    width: 40%;
+    background-color: #292935;
+}
+main .container aside .education{
+    margin-bottom: 50px;
+}
+main .container aside .education .info{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+main .container aside .education .info p{
+    font-size: 1rem;
+
+}
+main .container aside .education .info span{
+    font-size: .75rem;
+}
+main .container aside .skills{
+
+}
+main .container aside .skills .prog{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+@media (max-width:767px) {
+    
+}
+main .container aside .skills .prog label{
+
+}
+progress{
+    height: 4px;
+    border: none;
+   
+}
+progress::-webkit-progress-value {
+    background: #FFC905;
+  }
+
+  main .container aside .contact{
+    display: flex;
+    padding-right: 80px;
+  }
+  main .container aside .contact .icon{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #FFCA05;
+    padding: 30px 20px 10px;
+  }
+  main .container aside .contact .icon a{
+    color: #22222E;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  main .container aside .contact .adresse div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .container aside .contact .adresse div span:first-child{
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  main .container aside .contact .adresse {
+    padding-top: 30px;
+  }
+/* =========== Star Section =========== */
+.section{
+    padding: 40px 30px;
+    flex: 1;
+    background-color: #22222E;
+}
+.section .experience{
+
+}
+.section .experience{
+
+}
+.section .experience .info{
+
+}
+.section  ul li{
+    position: relative;
+    margin: 10px 0;
+}
+.section  ul li::before{
+    position: absolute;
+    content: '>';
+    width: 10px;
+    height: 100%;
+    left: -12px;
+    top: 0;
+    color: #FFCA05;
+}
+.section .experience .info .company{
+    background-color: #FFCA05;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 20px 0;
+    width: 80px;
+    text-align: center;
+}
+.section .experience .info .services{
+    margin-bottom: px;
+}
+.section .interests{
+    display: flex;
+    justify-content: space-around;
+}
+.section .interests .ic{
+    font-size: 2.5rem;
+    color: #FFCA05;
+    display: block;
+    margin-bottom: 15px;
+}
