@@ -115,10 +115,12 @@ h2::after{
     gap: 40px;
 
 }
+
 .header .profile .image{
     width: 30%;
     position: relative;
 }
+
 .header .profile .image::before{
     position: absolute;
     content: '';
@@ -164,16 +166,58 @@ h2::after{
     font-size: 1.25rem;
     line-height: 1.7;
 }
+@media (max-width:991px) {
+    .header .profile{
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+    .header .profile .image{
+        width: 100%;
+        max-height: 100%;
+        position: absolute;
+    }
+    .header .profile .info{
+        margin-top: 80px;
+        position: absolute;
+        z-index: 5;
+    }
+}
+@media (max-width:767px) {
+    .header .profile{
+        height: 1000px;
+    }
+    .header .profile .info h1{
+        margin-top: 80px;
+    }
+    .header .profile .info h2{
+        margin-top: 150px;
+    }
+}
 /* =========== Star Main =========== */
+main{
+    
+}
 main .container{
     display: flex;
     color: white;
+}
+@media (max-width:991px) {
+    main .container{
+        flex-direction: column;
+        
+    }
 }
 /* =========== Star Aside =========== */
 main .container aside{
     padding: 40px 30px;
     width: 40%;
     background-color: #292935;
+}
+@media (max-width:991px) {
+    main .container aside{
+        width: 100%;
+    }
 }
 main .container aside .education{
     margin-bottom: 50px;
@@ -201,15 +245,16 @@ main .container aside .skills .prog{
     align-items: center;
 }
 @media (max-width:767px) {
-    
-}
+    main .container aside .skills .prog{
+        padding-right: 0;
+    }
+  }
 main .container aside .skills .prog label{
 
 }
 progress{
     height: 4px;
     border: none;
-   
 }
 progress::-webkit-progress-value {
     background: #FFC905;
@@ -220,6 +265,11 @@ progress::-moz-progress-bar{
   main .container aside .contact{
     display: flex;
     padding-right: 80px;
+  }
+  @media (max-width:767px) {
+    main .container aside .contact{
+        padding-right: 0;
+    }
   }
   main .container aside .contact .icon{
     display: flex;
@@ -297,3 +347,9 @@ progress::-moz-progress-bar{
     display: block;
     margin-bottom: 15px;
 }
+@media (max-width:767px) {
+    .section .interests .ic{
+        font-size: 2rem;
+    }
+}
+/* ===========  Version mobile =========== */
