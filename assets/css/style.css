@@ -112,11 +112,11 @@ h2::after{
 }
 .header .profile{
     display: flex;
-    gap: 50px;
+    gap: 40px;
 
 }
 .header .profile .image{
-    width: 700px;
+    width: 30%;
     position: relative;
 }
 .header .profile .image::before{
@@ -139,6 +139,7 @@ h2::after{
     flex-direction: column;
     align-items: center;
     padding: 15px 30px;
+    flex: 1;
 }
 .header .profile .info h1{
     text-transform: uppercase;
@@ -158,6 +159,10 @@ h2::after{
 }
 .header .profile .info span{
     font-weight: bold;
+}
+.header .profile .info p{
+    font-size: 1.25rem;
+    line-height: 1.7;
 }
 /* =========== Star Main =========== */
 main .container{
@@ -208,8 +213,10 @@ progress{
 }
 progress::-webkit-progress-value {
     background: #FFC905;
-  }
-
+}
+progress::-moz-progress-bar{
+    background: #FFC905;
+}
   main .container aside .contact{
     display: flex;
     padding-right: 80px;
