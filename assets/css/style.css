@@ -64,10 +64,13 @@ h2::after{
     content: '';
     width: 40px;
     height: 4px;
-    background-color: #FFC905;
+    background-color: var(--second--color);
     left: 0;
     bottom: -5px;
     border-radius: 8px;
+}
+.seconde-color{
+    color: var(--second--color);
 }
 /* =========== Container =========== */
 .container{
